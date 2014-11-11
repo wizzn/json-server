@@ -1,4 +1,5 @@
 **/*.logq
 node_modules
 db.json
+mock_data.json
 .DS_Store
