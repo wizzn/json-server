@@ -71,7 +71,7 @@ module.exports = function(object, filename) {
         // Convert query parameters to their native counterparts
         for (var key in req.query) {
           if (key !== 'callback') {
-            filters[key] = utils.toNative(req.query[key])
+            filters[key] = req.query[key]
           }
         }
 
