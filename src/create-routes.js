@@ -64,7 +64,7 @@ module.exports = function(object, filename) {
 
         // Add :parentId filter in case URL is like /:parent/:parentId/:resource
         if (req.params.parent) {
-          filters[req.params.parent.slice(0, - 1) + 'Id'] = +req.params.parentId
+          filters[req.params.parent.slice(0, - 1) + 'Id'] = req.params.parentId
         }
 
         // Add query parameters filters
