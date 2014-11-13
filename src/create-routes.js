@@ -111,7 +111,7 @@ module.exports = function(object, filename) {
     // GET /:resource/:id
     show: function(req, res, next) {
       var resource = db(req.params.resource)
-        .get(+req.params.id)
+        .get(req.params.id)
         .value()
 
       if (resource) {
